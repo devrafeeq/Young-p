@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young P Electrical Engineer | Solar & Electrical Power Solutions</title>
+    <meta name="description"
+        content="Young P Electrical Engineer provides professional solar, inverter, electrical wiring, CCTV, fire alarm, POP and LED lighting solutions in Ogbomoso, Ibadan and Oyo State, Nigeria.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiveness.css">
+    <!-- Open Graph / WhatsApp Preview Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Young P Electrical Engineer | Solar & Electrical Power Solutions">
+    <meta property="og:description"
+        content="Professional solar, inverter, wiring, CCTV, fire alarm, POP & LED lighting solutions in Oyo State.">
+    <meta property="og:image" content="logo.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="./IMAGES/logo.jpg">
+
+    <style>
+        /* Logo & Brand Styling */
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .header-logo {
+            height: 48px;
+            width: auto;
+            border-radius: 6px;
+            object-fit: contain;
+            filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+            transition: transform 0.3s ease;
+        }
+
+        .brand-container:hover .header-logo {
+            transform: scale(1.05);
+        }
+
+        .brand-text-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-title {
+            font-size: 18px;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.1;
+            letter-spacing: 0.5px;
+        }
+
+        .brand-title span {
+            color: #eab83e;
+        }
+
+        .brand-subtitle {
+            font-size: 10px;
+            font-weight: 600;
+            color: #647386;
+            letter-spacing: 1.5px;
+        }
+
+        /* Footer Logo Styling */
+        .footer-logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 12px;
+        }
+
+        .footer-logo {
+            height: 55px;
+            width: auto;
+            border-radius: 8px;
+            background: #ffffff;
+            padding: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        /* Portfolio Gallery Styling */
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: #f0f4f8;
+            border: 1px solid #dcdfe6;
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--navy, #0f2b48);
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--navy, #0f2b48);
+            color: #ffffff;
+            border-color: var(--navy, #0f2b48);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            background: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 15px;
+        }
+
+        .gallery-caption h4 {
+            margin: 0 0 5px;
+            font-size: 16px;
+            color: var(--navy, #0f2b48);
+        }
+
+        .gallery-caption p {
+            margin: 0;
+            font-size: 13px;
+            color: #647386;
+        }
+
+        /* Hidden projects layout */
+        .gallery-item.extra-project {
+            display: none;
+        }
+
+        .gallery-action-wrapper {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        @media (max-width: 768px) {
+            .header-logo {
+                height: 40px;
+            }
+            .brand-title {
+                font-size: 16px;
+            }
+            .brand-subtitle {
+                font-size: 9px;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <a class="brand-container" href="#">
+                <img src="./IMAGES/logo.jpg" alt="Young P Electrical Engineer Logo" class="header-logo">
+                <div class="brand-text-group">
+                    <span class="brand-title">YOUNG <span>P</span></span>
+                    <span class="brand-subtitle">ELECTRICAL ENGINEER</span>
+                </div>
+            </a>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#process">Process</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a class="btn btn-gold" href="https://wa.me/2349036891580">WhatsApp Us</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div>
+                    <div class="kicker">Solar & Electrical Power Solutions</div>
+                    <h1>Powering Your World,<br><span>Brightening Your Future.</span></h1>
+                    <p>Professional solar, inverter and electrical solutions for homes, offices, commercial spaces and
+                        industrial projects.</p>
+                    <a class="btn btn-gold" href="#contact">Request a Quote</a>
+                    <a class="btn btn-blue" href="#services" style="margin-left:8px">View Services</a>
+                </div>
+                <div class="hero-card">
+                    <h3>Reliable Power. Professional Installation.</h3>
+                    <p>From system design and load assessment to installation, testing and maintenance, we deliver
+                        practical solutions tailored to your power needs.</p>
+                    <div class="points">
+                        <div><span>✓</span> Safe & reliable installation</div>
+                        <div><span>✓</span> Quality materials & equipment</div>
+                        <div><span>✓</span> Skilled technicians</div>
+                        <div><span>✓</span> Transparent pricing</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our <span>Services</span></h2>
+                    <p>Complete electrical and power solutions delivered with professional workmanship.</p>
+                </div>
+                <div class="grid">
+                    <div class="service">
+                        <div class="icon">☀</div>
+                        <h3>Solar & Inverter Systems</h3>
+                        <p>System design, load assessment, installation, battery integration, testing and maintenance.
+                        </p>
+                    </div>
+                    <div class="service">
+                        <div class="icon">⚡</div>
+                        <h3>Electrical House Wiring</h3>
+                        <p>Residential and commercial wiring, distribution boards, protection and complete electrical
+                            installation.</p>
+                    </div>
+                    <div class="service">
+                        <div class="icon">▦</div>
+                        <h3>Conduit Pipe Laying</h3>
+                        <p>Professional conduit work for residential, commercial and industrial electrical projects.</p>
+                    </div>
+                    <div class="service">
+                        <div class="icon">◉</div>
+                        <h3>CCTV & Security</h3>
+                        <p>CCTV installation, DVR/NVR setup, remote monitoring and security system integration.</p>
+                    </div>
+                    <div class="service">
+                        <div class="icon">♢</div>
+                        <h3>Fire Alarm Systems</h3>
+                        <p>Installation of fire alarm and detection systems with safety-focused commissioning.</p>
+                    </div>
+                    <div class="service">
+                        <div class="icon">✦</div>
+                        <h3>POP & LED Lighting</h3>
+                        <p>Modern ceiling lighting, LED installations, decorative lighting and energy-efficient
+                            solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Portfolio / Photo Gallery Section -->
+        <section class="section alt" id="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Project <span>Portfolio</span></h2>
+                    <p>Take a look at some of our recently completed electrical, conduit piping, solar, and lighting projects.</p>
+                </div>
+
+                <div class="gallery-filters">
+                    <button class="filter-btn active" onclick="filterGallery('all', this)">All Projects</button>
+                    <button class="filter-btn" onclick="filterGallery('solar', this)">Solar & Inverters</button>
+                    <button class="filter-btn" onclick="filterGallery('wiring', this)">Electrical Wiring & Piping</button>
+                    <button class="filter-btn" onclick="filterGallery('lighting', this)">POP & Cabinet Lighting</button>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Solar Systems (Initial) -->
+                    <div class="gallery-item" data-category="solar">
+                        <img src="./IMAGES/solar 1.jpeg" alt="Commercial Battery & Inverter Cabinet Setup">
+                        <div class="gallery-caption">
+                            <h4>High-Capacity Battery Rack Setup</h4>
+                            <p>Rack-mounted high-capacity battery bank and inverter system integration.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="solar">
+                        <img src="./IMAGES/solar 2.png" alt="Rooftop Commercial Solar Array">
+                        <div class="gallery-caption">
+                            <h4>Commercial Solar Panel Installation</h4>
+                            <p>Large-scale rooftop solar array setup and alignment.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="solar">
+                        <img src="./IMAGES/solar 3.png" alt="High Capacity Hybrid Inverter & Storage Room">
+                        <div class="gallery-caption">
+                            <h4>Multi-Inverter Power Control Room</h4>
+                            <p>Industrial-grade hybrid inverter setup with dual battery storage units.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="solar">
+                        <img src="./IMAGES/solar 4.jpg" alt="High Efficiency Rooftop Solar Panel Mount">
+                        <div class="gallery-caption">
+                            <h4>Rooftop Solar Mount</h4>
+                            <p>High-efficiency rooftop solar module installation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Electrical Wiring & Piping (Initial) -->
+                    <div class="gallery-item" data-category="wiring">
+                        <img src="./IMAGES/pipe 1.png" alt="Wall Conduit Piping for Staircase Lighting">
+                        <div class="gallery-caption">
+                            <h4>Staircase Wall Conduit Installation</h4>
+                            <p>Precision conduit piping setup for staircase step lights.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="wiring">
+                        <img src="./IMAGES/pipe 2.jpg" alt="Embedded Distribution Board Conduit Work">
+                        <div class="gallery-caption">
+                            <h4>Distribution Box Conduit Installation</h4>
+                            <p>Flush-mounted distribution board installation and trunking setup.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="wiring">
+                        <img src="./IMAGES/pipe 3.jpg" alt="Slab Conduit Piping Installation">
+                        <div class="gallery-caption">
+                            <h4>Decking & Slab Conduit Laying</h4>
+                            <p>Pre-pour electrical conduit layout on concrete slab reinforcement.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="wiring">
+                        <img src="./IMAGES/pipe 4.jpg" alt="Roof Slab Electrical Conduit Network">
+                        <div class="gallery-caption">
+                            <h4>Roof Slab Conduit Network</h4>
+                            <p>Structural ceiling conduit routing for full-building power distribution.</p>
+                        </div>
+                    </div>
+
+                    <!-- Lighting & Interior Electricals (Initial) -->
+                    <div class="gallery-item" data-category="lighting">
+                        <img src="./IMAGES/light 22.jpg" alt="Integrated Cabinet Accent & Ambient Interior Lighting">
+                        <div class="gallery-caption">
+                            <h4>Architectural Cabinet & Ambient Lighting</h4>
+                            <p>Custom ambient shelf backlighting and integrated interior LED profiles.</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional Hidden Projects (Revealed on View More) -->
+                    <div class="gallery-item extra-project" data-category="solar">
+                        <img src="solar 2.png" alt="Off-Grid Solar Power System">
+                        <div class="gallery-caption">
+                            <h4>Residential Solar Array</h4>
+                            <p>Clean roof installation with high-efficiency PV panels.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item extra-project" data-category="wiring">
+                        <img src="pipe 2.jpg" alt="Main Power Distribution Panel Wiring">
+                        <div class="gallery-caption">
+                            <h4>Distribution Panel & Breaker Board</h4>
+                            <p>Neat breaker alignment, phase distribution, and surge protection.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item extra-project" data-category="lighting">
+                        <img src="light 22.jpg" alt="POP Ceiling Concealed Strip Lighting">
+                        <div class="gallery-caption">
+                            <h4>POP LED Ceiling Design</h4>
+                            <p>Warm ambient ceiling glow with concealed spotlight fixtures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View More / Show Less Toggle Button -->
+                <div class="gallery-action-wrapper">
+                    <a href="projects.html" class="btn btn-navy">View More Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="container about">
+                <div>
+                    <div class="kicker">Why Young P</div>
+                    <h2 style="font-size:36px;color:var(--navy);margin:10px 0 15px">Built around quality, safety and
+                        dependable power.</h2>
+                    <p>Young P Electrical Engineer provides electrical and solar power solutions designed around each
+                        customer's actual needs, site conditions and budget.</p>
+                    <div class="points">
+                        <div><span>✓</span> Residential, commercial & industrial projects</div>
+                        <div><span>✓</span> Professional site inspection & load assessment</div>
+                        <div><span>✓</span> Proper system sizing and protection</div>
+                        <div><span>✓</span> Installation, maintenance & support</div>
+                    </div>
+                </div>
+                <div class="about-box">
+                    <h3>Our Promise</h3>
+                    <p>We aim to deliver installations that are safe, neat, efficient, durable and easy for the customer
+                        to understand and maintain.</p>
+                    <br><strong class="gold">“A Trial Will Convince You.”</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt" id="process">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Work <span>Process</span></h2>
+                    <p>A clear process from first consultation to professional completion.</p>
+                </div>
+                <div class="process">
+                    <div class="step">
+                        <h3>Consultation</h3>
+                        <p>Understand your power requirements, goals and budget.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Site Inspection</h3>
+                        <p>Inspect the installation environment and identify practical requirements.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Load Assessment & Design</h3>
+                        <p>Calculate demand and develop an appropriate electrical or solar solution.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Quotation & Approval</h3>
+                        <p>Present equipment, scope, pricing and project terms for approval.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Professional Installation</h3>
+                        <p>Install, configure, protect and test the completed system.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Handover & Support</h3>
+                        <p>Explain operation and provide maintenance/support guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="reviews">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Customer <span>Reviews & Rating</span></h2>
+                    <p>See what our clients say or leave your own review below.</p>
+                </div>
+
+                <div class="rating-grid">
+                    <div class="rating-card">
+                        <h3>Rate Our Service</h3>
+                        <p>How was your experience working with Young P Electrical Engineer?</p>
+                        <form id="ratingForm" class="rating-form">
+                            <div class="form-group">
+                                <label for="clientName">Your Name</label>
+                                <input type="text" id="clientName" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Your Rating</label>
+                                <div class="star-rating">
+                                    <input type="radio" id="star5" name="rating" value="5" required><label for="star5"
+                                        title="5 stars">★</label>
+                                    <input type="radio" id="star4" name="rating" value="4"><label for="star4"
+                                        title="4 stars">★</label>
+                                    <input type="radio" id="star3" name="rating" value="3"><label for="star3"
+                                        title="3 stars">★</label>
+                                    <input type="radio" id="star2" name="rating" value="2"><label for="star2"
+                                        title="2 stars">★</label>
+                                    <input type="radio" id="star1" name="rating" value="1"><label for="star1"
+                                        title="1 star">★</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="clientFeedback">Your Review / Comment</label>
+                                <textarea id="clientFeedback" rows="4"
+                                    placeholder="Tell us about the project and service delivered..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-gold btn-full">Send Review</button>
+                        </form>
+                    </div>
+
+                    <div class="reviews-feed-wrapper">
+                        <div class="reviews-feed-header">
+                            <h3>Client Feedbacks</h3>
+                            <span id="reviewsCount">0 Reviews</span>
+                        </div>
+                        <div class="reviews-list" id="reviewsContainer">
+                            <p id="noReviewsText" style="color: #8191a4; font-size: 14px; text-align: center; padding: 20px 0;">
+                                Loading customer reviews...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta-inner">
+                <div>
+                    <h2>Need a reliable power solution?</h2>
+                    <p>Let's discuss your project and prepare the right solution.</p>
+                </div>
+                <a class="btn btn-gold" href="https://wa.me/2349036891580">Chat on WhatsApp</a>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact <span>Young P</span></h2>
+                    <p>Available for electrical, solar and security projects.</p>
+                </div>
+                <div class="contact">
+                    <div class="contact-card">
+                        <div class="contact-item"><strong>Phone</strong>08073821709, 09036891580</div>
+                        <div class="contact-item"><strong>WhatsApp</strong><a
+                                href="https://wa.me/2349036891580">09036891580 — Chat Now</a></div>
+                        <div class="contact-item"><strong>Email</strong>mubarakajibadebabalola@gmail.com</div>
+                        <div class="contact-item"><strong>Service Areas</strong>Ogbomoso, Ibadan & Oyo State, Nigeria
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <h3 style="color:var(--navy);margin-bottom:10px">Request a Project Quote</h3>
+                        <p style="color:#647386;margin-bottom:18px">Send your project details, location and preferred
+                            contact method on WhatsApp for an initial discussion.</p>
+                        <a class="btn btn-gold"
+                            href="https://wa.me/2349036891580?text=Hello%20Young%20P%20Electrical%20Engineer%2C%20I%20would%20like%20to%20request%20a%20quotation%20for%20a%20project.">Request
+                            Quote on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo-wrapper">
+                    <img src="logo.jpg" alt="Young P Logo" class="footer-logo">
+                    <div>
+                        <div class="footer-brand" style="font-weight: 800; font-size: 18px;">YOUNG <span class="gold">P</span> ELECTRICAL ENGINEER</div>
+                        <div style="font-size: 13px; opacity: 0.85;">Solar & Electrical Power Solutions</div>
+                    </div>
+                </div>
+            </div>
+            <div style="align-self: center;">Powering Your World, Brightening Your Future.</div>
+        </div>
+    </footer>
+
+    <script>
+        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx_RgiG9t1CfvG3PwMYrswu5bP3xsKKMuCV2gsfK6MatZJxmoDdED_6_L2LI17kTX6h/exec';
+
+        let currentActiveCategory = 'all';
+        let isExpanded = false;
+
+        document.addEventListener('DOMContentLoaded', fetchLiveReviews);
+
+        function filterGallery(category, btnElement) {
+            currentActiveCategory = category;
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            if (btnElement) btnElement.classList.add('active');
+
+            items.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                const isExtra = item.classList.contains('extra-project');
+
+                const matchesCategory = (category === 'all' || itemCategory === category);
+
+                if (matchesCategory) {
+                    if (!isExtra || isExpanded) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleMoreProjects() {
+            const extraProjects = document.querySelectorAll('.extra-project');
+            const btn = document.getElementById('viewMoreBtn');
+
+            isExpanded = !isExpanded;
+
+            extraProjects.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                const matchesCategory = (currentActiveCategory === 'all' || itemCategory === currentActiveCategory);
+
+                if (isExpanded && matchesCategory) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            if (isExpanded) {
+                btn.innerText = 'Show Less Projects';
+            } else {
+                btn.innerText = 'View More Projects';
+            }
+        }
+
+        document.getElementById('ratingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = this.querySelector('button[type="submit"]');
+            submitBtn.innerText = 'Submitting Review...';
+            submitBtn.disabled = true;
+
+            const name = document.getElementById('clientName').value;
+            const ratingInput = document.querySelector('input[name="rating"]:checked');
+            const rating = ratingInput ? parseInt(ratingInput.value) : 5;
+            const feedback = document.getElementById('clientFeedback').value;
+            const todayDate = new Date().toLocaleDateString();
+
+            const newReviewData = {
+                name: name,
+                rating: rating,
+                feedback: feedback,
+                date: todayDate
+            };
+
+            fetch(APPS_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'cors',
+                redirect: 'follow',
+                headers: {
+                    'Content-Type': 'text/plain;charset=utf-8'
+                },
+                body: JSON.stringify(newReviewData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const noReviewsText = document.getElementById('noReviewsText');
+                    if (noReviewsText) noReviewsText.remove();
+
+                    renderReviewCard({
+                        name: name,
+                        rating: rating,
+                        feedback: feedback,
+                        date: todayDate
+                    }, true);
+
+                    updateReviewCount(1);
+
+                    document.getElementById('ratingForm').reset();
+                    submitBtn.innerText = 'Send Review';
+                    submitBtn.disabled = false;
+
+                    const starsText = '★'.repeat(rating);
+                    const message = `Hello Young P Electrical Engineer,%0A%0A*New Review Posted on Website*%0A*Client Name:* ${encodeURIComponent(name)}%0A*Rating:* ${starsText} (${rating}/5 Stars)%0A*Review:* ${encodeURIComponent(feedback)}`;
+                    window.open(`https://wa.me/2349036891580?text=${message}`, '_blank');
+                })
+                .catch(error => {
+                    console.error('Error submitting review:', error);
+                    alert('Failed to submit review online. Opening WhatsApp instead.');
+                    submitBtn.innerText = 'Send Review';
+                    submitBtn.disabled = false;
+                });
+        });
+
+        function fetchLiveReviews() {
+            fetch(APPS_SCRIPT_URL)
+                .then(response => response.json())
+                .then(reviews => {
+                    const noReviewsText = document.getElementById('noReviewsText');
+
+                    if (Array.isArray(reviews) && reviews.length > 0) {
+                        if (noReviewsText) noReviewsText.remove();
+                        reviews.reverse().forEach(review => renderReviewCard(review, false));
+                        updateReviewCount(reviews.length, true);
+                    } else {
+                        if (noReviewsText) {
+                            noReviewsText.innerText = 'No reviews yet. Be the first to leave a review!';
+                        }
+                        updateReviewCount(0, true);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching live reviews:', error);
+                    const noReviewsText = document.getElementById('noReviewsText');
+                    if (noReviewsText) {
+                        noReviewsText.innerText = 'No reviews yet. Be the first to leave a review!';
+                    }
+                });
+        }
+
+        function renderReviewCard(review, isNew) {
+            const reviewsContainer = document.getElementById('reviewsContainer');
+            if (!reviewsContainer) return;
+
+            const ratingNumber = parseInt(review.rating) || 5;
+            const starsText = '★'.repeat(ratingNumber);
+
+            const reviewElement = document.createElement('div');
+            reviewElement.className = 'review-item';
+            reviewElement.innerHTML = `
+                <div class="review-header">
+                    <strong>${escapeHTML(review.name)}</strong>
+                    <div class="stars">${starsText}</div>
+                </div>
+                <small>${review.date ? escapeHTML(review.date) : 'Verified Client'}</small>
+                <p>"${escapeHTML(review.feedback)}"</p>
+            `;
+
+            if (isNew) {
+                reviewsContainer.insertBefore(reviewElement, reviewsContainer.firstChild);
+            } else {
+                reviewsContainer.appendChild(reviewElement);
+            }
+        }
+
+        function updateReviewCount(amount, setTotal = false) {
+            const countElem = document.getElementById('reviewsCount');
+            if (!countElem) return;
+
+            let currentCount = parseInt(countElem.innerText) || 0;
+            let finalCount = setTotal ? amount : currentCount + amount;
+            countElem.innerText = `${finalCount} ${finalCount === 1 ? 'Review' : 'Reviews'}`;
+        }
+
+        function escapeHTML(str) {
+            if (!str) return '';
+            return String(str).replace(/[&<>'"]/g,
+                tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+            );
+        }
+    </script>
+</body>
+
+</html>
